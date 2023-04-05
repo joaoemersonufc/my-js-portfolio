@@ -80,11 +80,11 @@ export const Home = () => {
         index={1}
         title="How can I help you?"
         description="Discover more about what I can do."
-        buttonText="View habilities"
+        buttonText="View skills"
         buttonLink="/projects/my-experience"
         model={{
           type: 'laptop',
-          alt: 'Habilities cover',
+          alt: 'Skills cover',
           textures: [
             {
               srcSet: [sprTexture, sprTextureLarge],
