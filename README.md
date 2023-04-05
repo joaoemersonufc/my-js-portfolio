@@ -1,6 +1,8 @@
 # Personal portfolio
 
-My design portfolio to showcase a few projects. Built with [Next.js](https://nextjs.org/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://hamishw.com) or check out a live version of the [components storybook](https://storybook.hamishw.com).
+My design portfolio to showcase a few projects. Built with [Next.js](https://nextjs.org/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://my-js-portfolio-iota.vercel.app) or check out a live version of the [components storybook](https://storybook.hamishw.com).
+
+> > > > > > > 000c2be (adjust: remove other details)
 
 ## Install & run
 
