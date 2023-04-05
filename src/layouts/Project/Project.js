@@ -15,7 +15,7 @@ const initDelay = 300;
 export function ProjectHeader({
   title,
   description,
-  linkLabel = 'Visit website',
+  linkLabel = 'Visit the old portfolio',
   url,
   roles,
   className,
