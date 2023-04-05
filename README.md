@@ -45,3 +45,11 @@ Deploy serverless functions:
 ```bash
 cd functions
 ```
+
+# <<<<<<< HEAD
+
+```bash
+npm run deploy:api
+```
+
+> > > > > > > 272fdad (fix: errors on labels and texts)
