@@ -124,7 +124,7 @@ export const Experience = () => {
                   <ProjectSectionHeading>See my Linkedin Profile</ProjectSectionHeading>
                   <ProjectSectionText>
                     If you are interested in my work, get in touch using the menu on the left.
-                    Or if you prefer, visit my Linkedin page, I'm grateful that you've made it this far.
+                    Or if you prefer, visit my Linkedin page, Im grateful that youve made it this far.
                   </ProjectSectionText>
                 </ProjectTextRow>
                 <Button
