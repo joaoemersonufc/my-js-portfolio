@@ -1,7 +1,8 @@
-
-import profileImgLarge from 'assets/profile.jpeg';
-import profileImgPlaceholder from 'assets/profile.jpeg';
-import profileImg from 'assets/profile.jpeg';
+import {
+  default as profileImg,
+  default as profileImgLarge,
+  default as profileImgPlaceholder,
+} from 'assets/profile.jpeg';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -15,25 +16,46 @@ import { Fragment, useCallback, useEffect, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
 
-const ProfileText = ({ visible, titleId, title, text, translate, setTranslate }) => (
+const ProfileText = ({
+  visible,
+  titleId,
+  title,
+  text1,
+  text2,
+  translate,
+  setTranslate,
+}) => (
   <Fragment>
-    <Button secondary iconHoverShift icon="chevronRight" as="div" style={{marginBottom: 50}} onClick={() => {setTranslate(translate.includes('EN') ? 'Traduzir para PTBR' : 'Translate to EN');}} >
+    <Button
+      secondary
+      iconHoverShift
+      icon="chevronRight"
+      as="div"
+      style={{ marginBottom: 50 }}
+      onClick={() => {
+        setTranslate(translate.includes('EN') ? 'Traduzir para PTBR' : 'Translate to EN');
+      }}
+    >
       {translate}
     </Button>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text={title} start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    {text}
+      {text1}
+      <Link href="https://www.grupoboticario.com.br/">Grupo Boticário</Link>
+      {text2}
     </Text>
   </Fragment>
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
-  const defaultText = `Graduado em Engenharia de Software pela Universidade Federal do Ceará - UFC. Com mais de cinco anos de experiência em empresas de inovação e transformação digital. 
+  const defaultText1 = `Graduado em Engenharia de Software pela Universidade Federal do Ceará - UFC. Com mais de cinco anos de experiência em empresas de inovação e transformação digital. 
   Com experiência em análise e desenvolvimento de sistemas em diversos projetos e clientes nas áreas de: 
   Inovação, Logística, Telecomunicações, Saúde, Farmacêutica e Desenvolvimento de Software.
-  Atualmente atuo como Desenvolvedor Frontend Sênior no  ${<Link href="https://www.grupoboticario.com.br/">Grupo Boticário</Link>}, realizando atividades que envolvem consultoria em arquitetura, 
+  Atualmente atuo como Desenvolvedor Frontend Sênior no `;
+
+  const defaultText2 = `, realizando atividades que envolvem consultoria em arquitetura, 
   engenharia de software, desenvolvimento front-end, entre outras. Em meus trabalhos anteriores trabalhei em um projeto com ONU, SACRE, 
   Argus e outros produzindo softwares com alta escalabilidade e performance, na UDS trabalhei com R7/Record onde posso destacar 
   a aplicação de métodos de gamificação para estabelecer uma política de Documentação, reestruturação de processos nos setores de 
@@ -47,10 +69,12 @@ export const Profile = ({ id, visible, sectionRef }) => {
   nas seguintes áreas: Fast-MBA em Empreendedorismo, Negócios e Startups; Escola de Produto em Gestão de Produto e
   Construção de Produtos Digitais D.E.P.C® (DevOps), S.F.C®, S.F.P.C® e P.A.C®`;
 
-  const ENText = `Graduated in Software Engineering from the Federal University of Ceará - UFC. With more than five years of experience in innovation and digital transformation companies.
+  const ENText1 = `Graduated in Software Engineering from the Federal University of Ceará - UFC. With more than five years of experience in innovation and digital transformation companies.
   With experience in systems analysis and development in several projects and clients in the areas of:
   Innovation, Logistics, Telecommunications, Health, Pharmaceuticals and Software Development.
-  I currently work as a Senior Frontend Developer at ${<Link href="https://www.grupoboticario.com.br/">Grupo Boticário</Link>}, performing activities that involve consulting in architecture,
+  I currently work as a Senior Frontend Developer at `;
+
+  const ENText2 = `, performing activities that involve consulting in architecture,
   software engineering, front-end development, among others. In my previous jobs I worked on a project with the UN, SACRE,
   Argus and others producing software with high scalability and performance, at UDS I worked with R7/Record where I can highlight
   the application of gamification methods to establish a Documentation policy, restructuring of processes in the sectors of
@@ -63,33 +87,36 @@ export const Profile = ({ id, visible, sectionRef }) => {
   pandemic period. He was a supporter of the Nucleus for Improvement in Computational Tools (NAFeC) of the UFC. Has courses and certificates
   in the following areas: Fast-MBA in Entrepreneurship, Business and Startups; Product School in Product Management and
   Building Digital Products D.E.P.C® (DevOps), S.F.C®, S.F.P.C® and P.A.C®`;
-  
+
   const [focused, setFocused] = useState(false);
   const [translate, setTranslate] = useState('Translate to EN');
   const [title, setTitle] = useState('Olá');
-  const [text, setText] = useState(defaultText);
+  const [text1, setText1] = useState(defaultText1);
+  const [text2, setText2] = useState(defaultText2);
   const [message, setMessage] = useState('Me mande uma mensagem');
   const [about, setAbout] = useState('Sobre mim');
   const titleId = `${id}-title`;
 
   const translateToPTBR = useCallback(() => {
     setTitle('Olá!');
-    setText(defaultText);
+    setText1(defaultText1);
+    setText2(defaultText2);
     setMessage('Me mande uma mensagem');
     setAbout('Sobre mim');
-  },[defaultText]);
+  }, [defaultText1, defaultText2]);
 
   const translateToEN = useCallback(() => {
     setTitle('Hello!');
-    setText(ENText);
+    setText1(ENText1);
+    setText2(ENText2);
     setMessage('Send me a message');
     setAbout('About me');
-  },[ENText]);
+  }, [ENText1, ENText2]);
 
   useEffect(() => {
-    if(translate.includes('EN')) return translateToPTBR();
+    if (translate.includes('EN')) return translateToPTBR();
     translateToEN();
-  },[translate, translateToEN, translateToPTBR]);
+  }, [translate, translateToEN, translateToPTBR]);
 
   return (
     <Section
@@ -106,7 +133,15 @@ export const Profile = ({ id, visible, sectionRef }) => {
         {visible => (
           <div className={styles.content}>
             <div className={styles.column}>
-              <ProfileText visible={visible} titleId={titleId} text={text} title={title} translate={translate} setTranslate={setTranslate}/>
+              <ProfileText
+                visible={visible}
+                titleId={titleId}
+                text1={text1}
+                text2={text2}
+                title={title}
+                translate={translate}
+                setTranslate={setTranslate}
+              />
               <Button
                 secondary
                 className={styles.button}
@@ -145,8 +180,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   viewBox="0 0 135 765"
                   className={styles.svg}
                   data-visible={visible}
-                >
-                </svg>
+                ></svg>
               </div>
             </div>
           </div>

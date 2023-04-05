@@ -1,4 +1,3 @@
-
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
@@ -10,7 +9,13 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Front-end Specialist', 'Omni Developer', 'Product Manager', 'UX/UI', 'Prototyper'];
+const disciplines = [
+  'Front-end Specialist',
+  'Omni Developer',
+  'Product Manager',
+  'UX/UI',
+  'Prototyper',
+];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -73,13 +78,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="How I can help you?"
+        title="How can I help you?"
         description="Discover more about what I can do."
-        buttonText="View habilities"
+        buttonText="View skills"
         buttonLink="/projects/my-experience"
         model={{
           type: 'laptop',
-          alt: 'Habilities cover',
+          alt: 'Skills cover',
           textures: [
             {
               srcSet: [sprTexture, sprTextureLarge],
