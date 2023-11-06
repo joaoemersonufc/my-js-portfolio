@@ -43,7 +43,3 @@ Deploy serverless functions:
 ```bash
 cd functions
 ```
-
-```bash
-npm run deploy:api
-```
