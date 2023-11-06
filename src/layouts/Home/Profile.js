@@ -50,10 +50,10 @@ const ProfileText = ({
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
-  const defaultText1 = `Graduado em Engenharia de Software pela Universidade Federal do Ceará - UFC. Com mais de cinco anos de experiência em empresas de inovação e transformação digital. 
+  const defaultText1 = `Graduado em Engenharia de Software pela Universidade Federal do Ceará - UFC, Pós-graduado em Gestão da Inovação e Data Science. Com varios anos de experiência em empresas de inovação e transformação digital. 
   Com experiência em análise e desenvolvimento de sistemas em diversos projetos e clientes nas áreas de: 
   Inovação, Logística, Telecomunicações, Saúde, Farmacêutica e Desenvolvimento de Software.
-  Atualmente atuo como Desenvolvedor Frontend Sênior no `;
+  Atualmente atuo como Desenvolvedor Frontend Sênior no Grupo Boticário`;
 
   const defaultText2 = `, realizando atividades que envolvem consultoria em arquitetura, 
   engenharia de software, desenvolvimento front-end, entre outras. Em meus trabalhos anteriores trabalhei em um projeto com ONU, SACRE, 
@@ -69,10 +69,10 @@ export const Profile = ({ id, visible, sectionRef }) => {
   nas seguintes áreas: Fast-MBA em Empreendedorismo, Negócios e Startups; Escola de Produto em Gestão de Produto e
   Construção de Produtos Digitais D.E.P.C® (DevOps), S.F.C®, S.F.P.C® e P.A.C®`;
 
-  const ENText1 = `Graduated in Software Engineering from the Federal University of Ceará - UFC. With more than five years of experience in innovation and digital transformation companies.
+  const ENText1 = `Graduated in Software Engineering from the Federal University of Ceará - UFC, Post-graduate in Innovation Management and Data Science. With many years of experience in innovation and digital transformation companies.
   With experience in systems analysis and development in several projects and clients in the areas of:
   Innovation, Logistics, Telecommunications, Health, Pharmaceuticals and Software Development.
-  I currently work as a Senior Frontend Developer at `;
+  I currently work as a Senior Frontend Developer at Grupo Boticário`;
 
   const ENText2 = `, performing activities that involve consulting in architecture,
   software engineering, front-end development, among others. In my previous jobs I worked on a project with the UN, SACRE,
