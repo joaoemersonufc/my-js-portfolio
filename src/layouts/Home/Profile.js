@@ -50,7 +50,7 @@ const ProfileText = ({
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
-  const defaultText = `Graduado em Engenharia de Software pela Universidade Federal do Ceará - UFC. Com vários anos de experiência em empresas de inovação e transformação digital. 
+  const defaultText1 = `Graduado em Engenharia de Software pela Universidade Federal do Ceará - UFC. Com vários anos de experiência em empresas de inovação e transformação digital. 
   Com experiência em análise e desenvolvimento de sistemas em diversos projetos e clientes nas áreas de: 
   Inovação, Logística, Telecomunicações, Saúde, Farmacêutica e Desenvolvimento de Software.
   Atualmente atuo como Desenvolvedor Frontend Sênior no `;
@@ -69,7 +69,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
   nas seguintes áreas: Fast-MBA em Empreendedorismo, Negócios e Startups; Escola de Produto em Gestão de Produto e
   Construção de Produtos Digitais D.E.P.C® (DevOps), S.F.C®, S.F.P.C® e P.A.C®`;
 
-  const ENText = `Graduated in Software Engineering from the Federal University of Ceará - UFC. With many years of experience in innovation and digital transformation companies.
+  const ENText1 = `Graduated in Software Engineering from the Federal University of Ceará - UFC. With many years of experience in innovation and digital transformation companies.
   With experience in systems analysis and development in several projects and clients in the areas of:
   Innovation, Logistics, Telecommunications, Health, Pharmaceuticals and Software Development.
   I currently work as a Senior Frontend Developer at `;
