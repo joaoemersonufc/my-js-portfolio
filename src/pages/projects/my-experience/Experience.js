@@ -44,7 +44,7 @@ import styles from './Experience.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'More than 5 years of work';
+const title = 'Many years of work';
 const description =
   'I love to learning new features and frameworks and apply to the next generation website designs. In the right side you can see some areas thats I already worked at';
 const roles = [
