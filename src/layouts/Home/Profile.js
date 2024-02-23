@@ -50,43 +50,47 @@ const ProfileText = ({
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
-  const defaultText1 = `Graduado em Engenharia de Software pela Universidade Federal do Ceará - UFC, Pós-graduado em Gestão da Inovação e Data Science. Com varios anos de experiência em empresas de inovação e transformação digital. 
+  const defaultText1 = `Graduado em Engenharia de Software pela Universidade Federal do Ceará, UFC, Pós-graduado em Gestão da Inovação e Data Science. Com varios anos de experiência em empresas de inovação e transformação digital. 
   Com experiência em análise e desenvolvimento de sistemas em diversos projetos e clientes nas áreas de: 
   Inovação, Logística, Telecomunicações, Saúde, Farmacêutica e Desenvolvimento de Software.
   Sou professor, mentor pela Télos e atualmente atuo como Desenvolvedor Frontend Sênior no `;
 
   const defaultText2 = `, realizando atividades que envolvem consultoria em arquitetura, 
   engenharia de software, desenvolvimento front-end, entre outras. Em meus trabalhos anteriores trabalhei em um projeto com ONU, SACRE, 
-  Argus e outros produzindo softwares com alta escalabilidade e performance, na UDS trabalhei com R7/Record onde posso destacar 
+  Argus e outros, produzindo softwares com alta escalabilidade e performance, na UDS trabalhei com R7/Record onde posso destacar 
   a aplicação de métodos de gamificação para estabelecer uma política de Documentação, reestruturação de processos nos setores de 
   infraestrutura e suporte, além de reestruturar a área de tecnologia do cliente.
 
-  Entusiasta de eventos de inovação como Hackathons e Summer Jobs, tendo participado de dois estágios de verão na C.E.S.A.R e ACE. 
+  Entusiasta de eventos de inovação como Hackathons e Summer Jobs, e participei de dois estágios de verão no C.E.S.A.R e ACE. Como
   Gerente de recursos e desenvolvedor no aplicativo Grupo Parvi (Parvi24h) no estágio de verão da empresa C.E.S.A.R 
-  (Centro de Estudos e Sistemas Avançados do Recife). Pós-junior e cofundador da empresa junior IncludeJr, colaborador da TecHigienizar (UFPE)
+  (Centro de Estudos e Sistemas Avançados do Recife). Pós-junior e cofundador da empresa junior IncludeJr, colaborador da TecHigienizar (Pela Universidade Federal de Pernambuco, UFPE)
   e pesquisador da Corona Info, uma das primeiras iniciativas no Brasil para conectar, atender e informatizar pessoas de baixa renda neste
-  período pandêmico.Foi bolsista apoio do Núcleo de Melhoria em Ferramentas Computacionais (NAFeC) da UFC. Possui cursos e certificados
+  período pandêmico.Foi bolsista apoio do Núcleo de Melhoria em Ferramentas Computacionais (NAFeC) da Universidade Federal do Ceará, UFC. Possui cursos e certificados
   nas seguintes áreas: Fast-MBA em Empreendedorismo, Negócios e Startups; Escola de Produto em Gestão de Produto e
-  Construção de Produtos Digitais D.E.P.C® (DevOps), S.F.C®, S.F.P.C® e P.A.C®`;
+  Construção de Produtos Digitais
+  
+  Certificações: D.E.P.C® (DevOps Professional), S.F.C® (Scrum Fundamentals), S.F.P.C® (Scrum Professional).`;
 
-  const ENText1 = `Graduated in Software Engineering from the Federal University of Ceará - UFC, Post-graduate in Innovation Management and Data Science. With many years of experience in innovation and digital transformation companies.
+  const ENText1 = `Graduated in Software Engineering from the Federal University of Ceará, UFC, Post-graduate in Innovation Management and Data Science. With many years of experience in innovation and digital transformation companies.
   With experience in systems analysis and development in several projects and clients in the areas of:
   Innovation, Logistics, Telecommunications, Health, Pharmaceuticals and Software Development.
   Im professor, mentor at Télos and I currently work as a Senior Frontend Developer at `;
 
   const ENText2 = `, performing activities that involve consulting in architecture,
   software engineering, front-end development, among others. In my previous jobs I worked on a project with the UN, SACRE,
-  Argus and others producing software with high scalability and performance, at UDS I worked with R7/Record where I can highlight
+  Argus and others, producing software with high scalability and performance, at UDS I worked with R7/Record where I can highlight
   the application of gamification methods to establish a Documentation policy, restructuring of processes in the sectors of
   infrastructure and support, in addition to restructuring the client's technology area.
 
-  Enthusiast of innovation events such as Hackathons and Summer Jobs, having participated in two summer internships at C.E.S.A.R and ACE.
+  Enthusiastic about innovation events such as Hackathons and Summer Jobs, and participated in two summer internships at C.E.S.A.R and ACE. As
   Resource manager and developer on the Parvi Group app (Parvi24h) at the C.E.S.A.R company summer internship
-  (Recife Center for Studies and Advanced Systems). Post-junior and co-founder of the junior company IncludeJr, collaborator of TecHigienizar (UFPE)
+  (Recife Center for Studies and Advanced Systems). Post-junior and co-founder of the junior company IncludeJr, collaborator of TecHigienizar (At Federal University of Pernambuco, UFPE)
   and researcher at Corona Info, one of the first initiatives in Brazil to connect, serve and computerize low-income people in this
-  pandemic period. He was a supporter of the Nucleus for Improvement in Computational Tools (NAFeC) of the UFC. Has courses and certificates
+  pandemic period. He was a supporter of the Nucleus for Improvement in Computational Tools (NAFeC) of the Federal University of Ceará, UFC. Has courses and certificates
   in the following areas: Fast-MBA in Entrepreneurship, Business and Startups; Product School in Product Management and
-  Building Digital Products D.E.P.C® (DevOps), S.F.C®, S.F.P.C® and P.A.C®`;
+  Building Digital Products
+  
+  Certifications: D.E.P.C® (DevOps Professional), S.F.C® (Scrum Fundamentals), S.F.P.C® (Scrum Professional).`;
 
   const [focused, setFocused] = useState(false);
   const [translate, setTranslate] = useState('Translate to EN');
